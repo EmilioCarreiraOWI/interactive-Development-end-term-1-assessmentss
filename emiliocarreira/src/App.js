@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Dashboard from './Pages/Dashboard';
 import Compare from './Pages/Compare';
 import Timeline from './Pages/Timeline';
-import BasicNav from './componets/navigaton';
+import BasicNav from './componets/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
