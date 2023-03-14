@@ -1,17 +1,19 @@
-
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import dashboard from './Pages/dashboard';
-import compare from './Pages/Compare';
-import timeline from './Pages/Timeline';
+import Dashboard from './Pages/Dashboard';
+import Compare from './Pages/Compare';
+import Timeline from './Pages/Timeline';
+import BasicNav from './componets/navigaton';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
+      <BasicNav />
       <Routes>
-        <Route path="/" element= { <dashboard/>}/>
-        <Route path="compare" element= { <compare/>}/>
-        <Route path="timeline" element= { <timeline/>}/>
+        <Route path='/' element= { <Dashboard/> } />
+        <Route path='/Compare' element= { <Compare/> } />
+        <Route path='/Timeline' element= { <Timeline/> } />
       </Routes>
     </div>
   );

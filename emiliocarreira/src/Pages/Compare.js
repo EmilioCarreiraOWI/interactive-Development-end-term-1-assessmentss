@@ -1,10 +1,9 @@
-function compare() {
+import React from "react";
+
+function Compare() {
     return(
-        
-        <div>
-            <h1>Compare</h1>
-        </div>
+        <p>Compare</p>
     );
 }
 
-export default compare;
+export default Compare;

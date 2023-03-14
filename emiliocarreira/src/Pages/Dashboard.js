@@ -1,9 +1,9 @@
-function dashboard() {
+import React from "react";
+
+function Dashboard() {
     return(
-        <div>
-            <h1>dashboard</h1>
-        </div>
+        <p>Dashboard</p>
     );
 }
 
-export default dashboard;
+export default Dashboard;
