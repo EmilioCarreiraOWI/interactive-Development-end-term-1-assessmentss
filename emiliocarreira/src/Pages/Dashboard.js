@@ -32,29 +32,29 @@ function Dashboard() {
         <div>
             <h2 class=""  style={{color: 'white',}}>Dashboard</h2>
             <div id='cards-align' class='row mx-4'>
-                <div class='col-lg-4 mx-auto my-4'>
+                <div class='col-md-4 mx-auto my-4'>
                     <div>
                         <div class='card-body'id='cardBorder'> 
-                        <img src='https://cf-images.us-east-1.prod.boltdns.net/v1/static/4401740954001/d398335f-54f4-44c3-ae3b-81ba39298168/dcb68382-c7c1-40f0-85d3-92a7a30c18b5/1920x1080/match/image.jpg' alt='Dashboar tab' class='w-100' />
+                        <a href='/'><img src='https://cf-images.us-east-1.prod.boltdns.net/v1/static/4401740954001/d398335f-54f4-44c3-ae3b-81ba39298168/dcb68382-c7c1-40f0-85d3-92a7a30c18b5/1920x1080/match/image.jpg' alt='Dashboar tab' class='w-100' /></a>
                         <h5 class='card-title'>Title</h5>
                         </div>
                     </div>
                 </div>
                 
-                <div class='col-lg-4 mx-auto my-4'>
+                <div class='col-md-4 mx-auto my-4'>
                     <div>
                         <div class='card-body'id='cardBorder'> 
-                        <img src='https://nhfantasystorage.blob.core.windows.net/cflnewshub-storage/2022/12/CFL-Awards-109.png' alt='Dashboar tab' class='w-100' />
-                        <h5 class='card-title'>Title</h5>
+                        <a href='/Compare'><img src='https://nhfantasystorage.blob.core.windows.net/cflnewshub-storage/2022/12/CFL-Awards-109.png' alt='Dashboar tab' class='w-100' /></a>
+                        <h5 class='card-title'>Compare</h5>
                         </div>
                     </div>
                 </div>
                 
-                <div class='col-lg-4 mx-auto my-4'>
+                <div class='col-md-4 mx-auto my-4'>
                     <div>
                         <div class='card-body'id='cardBorder'> 
-                        <img src='https://www.britishamericanfootball.org/wp-content/uploads/2022/03/combine.png' alt='Dashboar tab' class='w-100' />
-                        <h5 class='card-title'>Title</h5>
+                        <a href='/Timeline'><img src='https://www.britishamericanfootball.org/wp-content/uploads/2022/03/combine.png' alt='Dashboar tab' class='w-100' /></a>
+                        <h5 class='card-title'>Timeline</h5>
                         </div>
                     </div>
                 </div>
