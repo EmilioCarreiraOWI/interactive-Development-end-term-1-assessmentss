@@ -10,7 +10,7 @@ function BasicNav() {
     return(
         <Navbar bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="/">CFL</Navbar.Brand>
+                <Navbar.Brand href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/CFL_Logo.svg/1123px-CFL_Logo.svg.png" alt="React Logo" id="logoImg"/></Navbar.Brand>
                 <Nav className="me-auto">
                     <Nav.Link href="/">Dashboard</Nav.Link>
                     <Nav.Link href="/Compare">Compare</Nav.Link>

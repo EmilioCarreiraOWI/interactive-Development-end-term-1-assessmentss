@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -21,7 +22,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -36,3 +37,28 @@
     transform: rotate(360deg);
   }
 }
+
+#logoImg {
+  height: 45px;
+}
+body{
+  color: #282c34;
+}
+#about{
+  border-radius:6px;
+  background-color: gray;
+
+}
+.cards{
+  float: left;
+  
+}
+#cardBorder{
+  background-color: grey;
+  border-color: #282c34;
+}
+
+#cards-align{
+  justify-items: center;
+  align-items: center;
+  }
