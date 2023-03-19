@@ -47,7 +47,8 @@ body{
 #about{
   border-radius:6px;
   background-color: gray;
-
+  background-image: url(https://img.freepik.com/premium-photo/space-suits-isolated-space-background-ai-generated_103740-2188.jpg);
+  color: white;
 }
 .cards{
   float: left;
