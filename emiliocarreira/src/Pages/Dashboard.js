@@ -7,7 +7,7 @@ import axios from "axios";
 
 function Dashboard() {
 
-    document.body.style = 'background-image: url()';
+    document.body.style = 'background-color: #2D383A';
 
     const [apiData, setApiData] =useState([]);
 
@@ -25,8 +25,8 @@ function Dashboard() {
     
         <>
         <div id='about' class='mx-3 p-2 my-4'>
-            <img class='my-2' variant="top" src="" style={{ width: '30%', marginLeft: 'auto' }} alt='CFL About Logo' />
-            <h5 class='col-md-7 m-auto my-2' style={{ marginLeft: '10%', marginRight: '10%', textAlign: 'left' }}>The Canadian Football League is a professional sports league in Canada. The CFL is the highest level of competition in Canadian football. The league consists of nine teams, each located in a city in Canada. They are divided into two divisions: four teams in the East Division and five teams in the West Division.</h5>
+            <img class='my-2' variant="top" src="https://www.vhv.rs/dpng/d/453-4533340_spacex-logo-png-white-spacex-black-logo-png.png" style={{ width: '30%', marginLeft: 'auto' }} alt='SpaceX About Logo' />
+            <h5 class='col-md-7 m-auto my-2' style={{ marginLeft: '10%', marginRight: '10%', textAlign: 'left' }}>SpaceX is an American spacecraft manufacturer, launcher, and a satellite communications corporation headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the stated goal of reducing space transportation costs to enable the colonization of Mars.</h5>
 
         </div>
         <div>
@@ -53,7 +53,7 @@ function Dashboard() {
                 <div class='col-md-4 mx-auto my-4'>
                     <div>
                         <div class='card-body'id='cardBorder'> 
-                        <a href='/Timeline'><img src='https://www.britishamericanfootball.org/wp-content/uploads/2022/03/combine.png' alt='Dashboar tab' class='w-100' /></a>
+                        <a href='/Timeline'><img src='https://thumbs.dreamstime.com/b/falcon-rocket-company-space-landing-falcon-rocket-company-space-landing-ai-generative-271701379.jpg' alt='Dashboar tab' class='w-100' /></a>
                         <h5 class='card-title'>Timeline</h5>
                         </div>
                     </div>
