@@ -5,7 +5,7 @@ function Timeline() {
 
     document.body.style = 'background-color: #2D383A';
 
-  const [launches, setLaunches] = useState([]); //greate a useState, to get the naming for the variables
+  const [launches, setLaunches] = useState([]); //create a useState, to get the naming for the variables
 
   useEffect(() => {
     axios.get('https://api.spacexdata.com/v3/launches') //axios get function for the API
