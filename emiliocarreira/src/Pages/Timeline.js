@@ -15,7 +15,6 @@ function Timeline() {
 
   return (
     <div className="timeline"> {/*diffrant class name for the div 'timeline' */}
-    <verticalTimeline></verticalTimeline>
       {launches.map(launch => (
         <div key={launch.flight_number} className="event">
           <h3>{launch.mission_name}</h3>
