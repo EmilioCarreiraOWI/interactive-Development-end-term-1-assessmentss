@@ -5,16 +5,19 @@ import axios from "axios";
 
 
 
+
 function Dashboard() {
 
     document.body.style = 'background-color: #2D383A';
 
 
 
+//Tab Images
     const [imageURL1, setImageURL1] = useState('');
     const [imageURL2, setImageURL2] = useState('');
     const [imageURL3, setImageURL3] = useState('');
 
+    //Image 1
         useEffect(() => {
         axios.get('https://api.spacexdata.com/v3/launches')
             .then(response => {
@@ -26,6 +29,7 @@ function Dashboard() {
             .catch(error => console.log(error));
         }, []);
 
+        //Image 2
         useEffect(() => {
             axios.get('https://api.spacexdata.com/v3/launches')
                 .then(response => {
@@ -37,6 +41,7 @@ function Dashboard() {
                 .catch(error => console.log(error));
             }, []);
 
+            //Image 3
             useEffect(() => {
                 axios.get('https://api.spacexdata.com/v3/launches')
                     .then(response => {
