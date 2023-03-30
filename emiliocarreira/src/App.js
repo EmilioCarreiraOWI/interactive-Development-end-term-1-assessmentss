@@ -4,6 +4,7 @@ import Dashboard from './Pages/Dashboard';
 import Compare from './Pages/Compare';
 import Timeline from './Pages/Timeline';
 import BasicNav from './componets/navbar';
+import Footer from './componets/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
         <Route path='/Compare' element= { <Compare/> } />
         <Route path='/Timeline' element= { <Timeline/> } />
       </Routes>
+
+      <Footer  class='fixed-bottom' />
     </div>
   );
 }

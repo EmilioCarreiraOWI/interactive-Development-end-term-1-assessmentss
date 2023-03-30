@@ -17,8 +17,8 @@ function Timeline() {
     <div className="timeline"> {/*diffrant class name for the div 'timeline' */}
       {launches.map(launch => (
         <div key={launch.flight_number} className="event">
-          <h3>{launch.mission_name}</h3>
-          <p>{launch.launch_date_local}</p>
+          <h3 style={{color: 'white'}}>{launch.mission_name}</h3>
+          <p style={{color: 'white'}}>{launch.launch_date_local}</p>
         </div>
       ))}
     </div>

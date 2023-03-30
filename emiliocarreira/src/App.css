@@ -40,7 +40,7 @@
 
 #logoImg {
   height: 45px;
-  border-radius: 30px;
+  border-radius: 50px;
 }
 body{
   color: #282c34;
@@ -64,3 +64,4 @@ body{
   justify-items: center;
   align-items: center;
   }
+
