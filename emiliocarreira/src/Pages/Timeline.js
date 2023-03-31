@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Row, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
+
 
 function Timeline() {
 
-    document.body.style = 'background-color: #2D383A';
+  document.body.style = 'background-color: #2D383A';
 
-  const [launches, setLaunches] = useState([]); //create a useState, to get the naming for the variables
+  const [launches, setLaunches] = useState([]);
 
   useEffect(() => {
     axios
@@ -16,81 +17,61 @@ function Timeline() {
       .catch((error) => console.log(error));
   }, []);
 
-  // const formatDataForTimeline = () => {
-  //   const timelineItems = [];
-  
-  //   launches.forEach((launch) => {
-  //     const { mission_name, launch_date_utc, details } = launch;
-  //     const date = new Date(launch_date_utc);
-  
-  //     timelineItems.push(
-  //       <li key={mission_name}>
-  //         <div className="timeline-badge"></div>
-  //         <div className="timeline-panel">
-  //           <div className="timeline-heading">
-  //             <h4 className="timeline-title">{mission_name}</h4>
-  //             <p>
-  //               <small className="text-muted">
-  //                 <i className="glyphicon glyphicon-time"></i>{" "}
-  //                 {date.toDateString()}
-  //               </small>
-  //             </p>
-  //           </div>
-  //           <div className="timeline-body">
-  //             <p>{details}</p>
-  //           </div>
-  //         </div>
-  //       </li>
-  //     );
-  //   });
-  
-    
-  //   return timelineItems;
-  // };
-
-  const formatDataForTimeline = () => {
-    const items = [];
-  
-    launches.forEach((launch) => {
-      const { mission_name, launch_date_utc, details } = launch;
-  
-      items.push({
-        date: new Date(launch_date_utc).toLocaleDateString(),
-        title: mission_name,
-        content: details || "No details available.",
-      });
-    });
-  
-    return items;
-  };
-
-  
+  const renderLaunch = (launch) => {
+    const isSuccess = launch.launch_success;
+    const launchDate = new Date(launch.launch_date_local).toLocaleDateString(
+      "en-US",
+      {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      }
+    );
+    const launchTime = new Date(launch.launch_date_local).toLocaleTimeString(
+      "en-US",
+      {
+        hour: "numeric",
+        minute: "numeric",
+      }
+    ); 
 
   return (
 
-  //   <div className="container">
-  //   <ul className="timeline">{formatDataForTimeline()}</ul>
-  // </div>
-  <Container>
-    <Row>
-      <Col xs={12}>
-        <div className="timeline">
-          {formatDataForTimeline().map((item, index) => (
-            <div className="timeline-item" key={index}>
-              <div className="timeline-item-content">
-                <h3 className="timeline-item-title">{item.title}</h3>
-                <p className="timeline-item-date">{item.date}</p>
-                <p className="timeline-item-description">{item.content}</p>
-              </div>
-              <div className="timeline-item-divider" />
-            </div>
-          ))}
-        </div>
-      </Col>
-    </Row>
-  </Container>
-    );
+    <div
+        key={launch.flight_number}
+        className={`launch ${isSuccess ? "success" : "fail"}`}
+      >
+        <div className="bullet" />
+        <div className="content" >
 
+        <div class='container'>
+          <div class='row'>
+              <div class='col-md-5'>
+                  <img style={{height: '250px'}} src={launch.links.mission_patch_small} alt={launch.mission_name} />
+                </div>
+
+                <div class='col-md-6'>
+                  <h3 id="timelineH3" class='text-white text-left'>{launch.mission_name}</h3>
+                  <p id="timelineP" class='text-muted'>
+                    {launchDate} at {launchTime}
+                  </p>
+
+                  <p id="timelineP" class='text-white'>{launch.details}</p>
+                </div>
+                
+                        
+                </div>
+                  
+        </div>
+        </div>
+          
+
+            
+        
+      </div>
+    );
+  }
+  return <div className="timeline">{launches.map(renderLaunch)}</div>;
 }
 
 export default Timeline;
