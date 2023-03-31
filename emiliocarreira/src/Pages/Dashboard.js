@@ -3,9 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 
-
-
-
 function Dashboard() {
 
     document.body.style = 'background-color: #2D383A';
