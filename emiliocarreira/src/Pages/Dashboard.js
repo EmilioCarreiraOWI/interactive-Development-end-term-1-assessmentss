@@ -117,9 +117,26 @@ function Dashboard() {
             <div class='row'>
                 <div class='col-md-8 my-3'>
 
-                    <div class='card-body'id='cardBorder' style={{height: 'Auto'}}> 
-                        <h5 class='card-title'>Chart: Don't want to display for some reason</h5>
-                        <a href='/'><img src={imageURL1} alt="Mission patch" class='w-50' /></a>
+                    <div class='card-body'id='cardBorder' style={{height: '500px'}}> 
+                    <div>
+                        {launch ? (
+                            <div>
+                            <div class="row">
+                                <div class='col-md-6 p-3'>
+                                   <h4>{launch.mission_name}</h4>
+                                    <p>{launch.details}</p> 
+                                </div>
+                                
+                                <div class='col-md-6 p-3'>
+                                    <img style={{height: '250px'}} src={launch.links.mission_patch_small} alt={launch.mission_name} />
+                                </div>
+                                
+                            </div>
+                            </div>
+                        ) : (
+                            <p>Loading...</p>
+                        )}
+                    </div>
                     </div>
 
                 </div>
@@ -143,37 +160,7 @@ function Dashboard() {
                     
                 </div>
             </div>
-
-
-            <div class='row'>
-                <div class='col-md-12 my-3'>
-
-                    {/* Timeline Page */}
-                    <div class='card-body'id='cardBorder'>
-                        
-                    <div>
-                        {launch ? (
-                            <div>
-                            <div class="row">
-                                <div class='col-md-6 p-3'>
-                                   <h4>{launch.mission_name}</h4>
-                                    <p>{launch.details}</p> 
-                                </div>
-                                
-                                <div class='col-md-6 p-3'>
-                                    <img style={{height: '250px'}} src={launch.links.mission_patch_small} alt={launch.mission_name} />
-                                </div>
-                                
-                            </div>
-                            </div>
-                        ) : (
-                            <p>Loading...</p>
-                        )}
-                    </div>
-                    
-                    </div>
-                </div>
-            </div> 
+ 
         </div>
     
             
