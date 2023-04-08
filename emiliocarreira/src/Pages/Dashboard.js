@@ -117,7 +117,7 @@ function Dashboard() {
             <div class='row'>
                 <div class='col-md-8 my-3'>
 
-                    <div class='card-body'id='cardBorder' style={{height: '500px'}}> 
+                    <div bg='dark' id='cardBorder' style={{height: '500px'}}> 
                     <div>
                         {launch ? (
                             <div>
@@ -146,14 +146,14 @@ function Dashboard() {
                   
                         <div class='card-body'id='cardBorder'>
                             <h5 class='card-title m-2'>Compare</h5>
-                            <a href='/'><img src={imageURL1} alt="Mission patch" class='w-50' /></a>
+                            <a href='/Compare'><img src={imageURL1} alt="Mission patch" class='w-50' /></a>
                         </div>
 
                     </div>
                     <div class='col-md-12 my-2'>
                         <div class='card-body'id='cardBorder'>
                             <h5 class='card-title m-2'>Time-Line</h5>
-                            <a href='/'><img src={imageURL2} alt="Mission patch" class='w-50' /></a>                            
+                            <a href='/TimeLine'><img src={imageURL2} alt="Mission patch" class='w-50' /></a>                            
                         </div>
                     </div>
                         
