@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
-import LaunchesCompareList1 from "./compare1";
+import LaunchesCompareList1 from "../Charts/compare1";
 
 function Compare() {
 

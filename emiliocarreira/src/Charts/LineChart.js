@@ -1,65 +1,54 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Chart from 'chart.js';
+import { Line } from 'react-chartjs-2';
 
 const LineChart = () => {
   const [launches, setLaunches] = useState([]);
 
   useEffect(() => {
-    // Fetch data from SpaceX API
-    axios.get('https://api.spacexdata.com/v3/launches')
-      .then(response => setLaunches(response.data))
-      .catch(error => console.error('Error fetching data:', error));
+    const fetchLaunches = async () => {
+      try {
+        const response = await axios.get('https://api.spacexdata.com/v3/launches');
+        setLaunches(response.data);
+      } catch (error) {
+        console.error('Error fetching launches:', error);
+      }
+    };
+    fetchLaunches();
   }, []);
 
-  useEffect(() => {
-    // Render line chart with fetched data
-    const ctx = document.getElementById('lineChart').getContext('2d');
+  const createChart = () => {
+    // Prepare data for the line chart
+    const labels = launches.map(launch => new Date(launch.launch_date_unix * 1000).toLocaleDateString());
+    const data = {
+      labels,
+      datasets: [
+        {
+          label: 'Launches',
+          data: launches.map(launch => launch.flight_number),
+          fill: false,
+          borderColor: 'rgb(75, 192, 192)',
+        },
+      ],
+    };
 
-    const labels = launches.map(launch => launch.mission_name);
-    const flightNumbers = launches.map(launch => launch.flight_number);
+    // Define options for the line chart
+    const options = {
+      responsive: true,
+      maintainAspectRatio: false,
+    };
 
-    new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: labels,
-        datasets: [{
-          label: 'SpaceX Launches',
-          data: flightNumbers,
-          borderColor: 'rgba(75, 192, 192, 1)',
-          borderWidth: 1,
-          pointRadius: 5,
-          pointBackgroundColor: 'rgba(75, 192, 192, 1)',
-          pointHoverRadius: 8,
-          pointHitRadius: 10,
-          pointHoverBackgroundColor: 'rgba(75, 192, 192, 1)',
-          fill: false
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          x: {
-            title: {
-              display: true,
-              text: 'Mission Name'
-            }
-          },
-          y: {
-            title: {
-              display: true,
-              text: 'Flight Number'
-            }
-          }
-        }
-      }
-    });
-  }, [launches]);
+    // Create the line chart
+    return (
+      <Line data={data} options={options} />
+    );
+  };
 
   return (
     <div>
-      <h1>SpaceX Launches Line Chart</h1>
-      <canvas id="lineChart" width="800" height="400"></canvas>
+      <h1>SpaceX Launches Timeline Chart</h1>
+      {launches.length ? createChart() : <p>Loading chart...</p>}
     </div>
   );
 };
