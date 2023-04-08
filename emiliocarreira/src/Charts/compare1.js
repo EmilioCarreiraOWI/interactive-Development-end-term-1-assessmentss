@@ -47,7 +47,7 @@ const LaunchesCompareList1 = () => {
             </div>
             <div class='Row'>
                 <p class='col-sm-12'>{selectedLaunch.details}</p> 
-                    <img  class='col-sm-5' src={selectedLaunch.links.mission_patch_small} alt={selectedLaunch.mission_name} />
+                    <img  class='col-sm-6' src={selectedLaunch.links.mission_patch_small} alt={selectedLaunch.mission_name} />
                 
                     
                 

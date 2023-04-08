@@ -42,6 +42,7 @@ function Timeline() {
         key={launch.flight_number}
         className={`launch ${isSuccess ? "success" : "fail"}`}
       >
+        
         <div className="bullet" />
         <div className="content" >
 

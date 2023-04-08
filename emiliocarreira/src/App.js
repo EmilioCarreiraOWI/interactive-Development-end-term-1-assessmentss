@@ -10,13 +10,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
+
+      
+      
       <BasicNav />
+
       <Routes>
         <Route path='/' element= { <Dashboard/> } />
         <Route path='/Compare' element= { <Compare/> } />
         <Route path='/Timeline' element= { <Timeline/> } />
       </Routes>
 
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      
       <Footer  class='fixed-bottom' />
     </div>
   );
