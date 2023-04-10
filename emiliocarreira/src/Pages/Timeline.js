@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Row, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import TimelineChart from "../Charts/TimelineChart";
 
 
 function Timeline() {
@@ -33,10 +33,10 @@ function Timeline() {
         hour: "numeric",
         minute: "numeric",
       }
-    ); 
+    );
+     
 
   return (
-    
 
     <div
         key={launch.flight_number}
@@ -59,8 +59,12 @@ function Timeline() {
                   </p>
 
                   <p id="timelineP" class='text-white'>{launch.details}</p>
+                  
                 </div>
-                
+
+                <div>
+                  {/* <TimelineChart /> */}
+                </div>
                         
                 </div>
                   

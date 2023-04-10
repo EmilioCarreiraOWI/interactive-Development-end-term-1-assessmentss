@@ -1,11 +1,12 @@
 import React from "react";
-import { Row, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import axios from "axios";
-import { useState, useEffect } from "react";
-import LineChart from "../Charts/LineChart";
+import LaunchesCompareList1 from "../componets/compare1";
+import { Row, Container } from "react-bootstrap";
+import BarChart from "../Charts/BarChart";
 import RadarChart from "../Charts/RadarChart";
-import LaunchesCompareList1 from "../Charts/compare1";
+import PieChart from "../Charts/PieChart";
+
+
 
 function Compare() {
 
@@ -43,7 +44,8 @@ function Compare() {
                   <div class='p-3'>
                     <h1 class='text-muted'>Charts:</h1>
                     {/* <RadarChart /> */}
-                    {/* <LineChart /> */}
+                    {/* <BarChart /> */}
+                    {/* <PieChart /> */}
                   </div>         
                 </div> 
             </div>

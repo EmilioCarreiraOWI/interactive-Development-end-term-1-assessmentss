@@ -2,8 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { container, row } from 'react-bootstrap'
-import RadarChart from "../Charts/RadarChart";
-import LineChart from "../Charts/LineChart";
+
 
 
 
@@ -117,11 +116,8 @@ function Dashboard() {
             </div>
             <div class='row'>
                 <div class='col-md-12 bg-dark text-light mt-3'>
-                    <h2>How do SpaceX make money?</h2>
-                    <p>
-SpaceX makes money by charging both governmental and commercial customers to send goods into space. These goods include ISS supplies and infrastructure, but also people and satellites for various purposes.</p>
-                    {/* <RadarChart /> */}
-                    {/* <LineChart /> */}
+                    <h4>How do SpaceX make money?</h4>
+                    <p>SpaceX makes money by charging both governmental and commercial customers to send goods into space. These goods include ISS supplies and infrastructure, but also people and satellites for various purposes.</p>
                 </div>
                 
             </div>
