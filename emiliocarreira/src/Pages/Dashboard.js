@@ -4,10 +4,6 @@ import axios from "axios";
 import { container, row } from 'react-bootstrap'
 
 
-
-
-
-
 function Dashboard() {
 
     document.body.style = 'background-color: #2D383A';
