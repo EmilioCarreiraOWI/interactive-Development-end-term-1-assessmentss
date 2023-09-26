@@ -1,12 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import LaunchesCompareList1 from "../componets/compare1";
-import { Row, Container } from "react-bootstrap";
-import BarChart from "../Charts/BarChart";
-import RadarChart from "../Charts/RadarChart";
-import PieChart from "../Charts/PieChart";
-
-
+import CompareNew from "../componets/CompareNew";
 
 function Compare() {
 
@@ -23,7 +17,7 @@ function Compare() {
                   
                   <div class='p-3'>
                     <h1 class='text-muted'>Select Launch Here:</h1>
-                    <LaunchesCompareList1 />
+                    <CompareNew />
                   </div>         
                 </div>   
                 
@@ -33,21 +27,10 @@ function Compare() {
                   
                   <div class='p-3'>
                   <h1 class='text-muted'>Select Launch Here:</h1>
-                    <LaunchesCompareList1 />
+                    <CompareNew />
                   </div>         
                 </div>
               
-            </div>
-            <div class='row'>
-                <div class="col-md-12 bg-dark text-white mx-auto my-3">
-                  
-                  <div class='p-3'>
-                    <h1 class='text-muted'>Charts:</h1>
-                    {/* <RadarChart /> */}
-                    {/* <BarChart /> */}
-                    {/* <PieChart /> */}
-                  </div>         
-                </div> 
             </div>
     </div>    
     );
