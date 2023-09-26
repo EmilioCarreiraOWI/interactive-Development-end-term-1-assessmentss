@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TimelineChart from "../Charts/TimelineChart";
+import LineChart from "../Charts/TestBarChart";
 
 
 function Timeline() {
@@ -37,6 +38,14 @@ function Timeline() {
      
 
   return (
+
+    <>
+
+    <div className="App">
+      <header className="App-header">
+        <LineChart />
+      </header>
+    </div>
 
     <div
         key={launch.flight_number}
@@ -75,6 +84,7 @@ function Timeline() {
             
         
       </div>
+      </>
     );
   }
   return <div className="timeline">{launches.map(renderLaunch)}</div>;
