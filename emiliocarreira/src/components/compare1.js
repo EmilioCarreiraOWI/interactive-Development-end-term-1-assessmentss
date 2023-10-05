@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {Container,Row} from "react-bootstrap";
 
 const LaunchesCompareList1 = () => {
   const [launches, setLaunches] = useState([]);
@@ -26,7 +25,7 @@ const LaunchesCompareList1 = () => {
   return (
     <div>
       
-      <select onChange={handleLaunchSelect} class='col-sm-8 my-3'>
+      <select onChange={handleLaunchSelect} id="compare1" class='col-sm-8 my-3 btn'>
         <option value="">Select a launch</option>
         {launches.map(launch => (
           <option key={launch.flight_number} value={launch.flight_number}>
@@ -35,6 +34,7 @@ const LaunchesCompareList1 = () => {
         ))}
       </select>
       {selectedLaunch && (
+
         <div class='Container'>
             <div class='Row'>
 
@@ -48,16 +48,7 @@ const LaunchesCompareList1 = () => {
             <div class='Row'>
                 <p class='col-sm-12'>{selectedLaunch.details}</p> 
                     <img  class='col-sm-6' src={selectedLaunch.links.mission_patch_small} alt={selectedLaunch.mission_name} />
-                
-                    
-                
             </div>
-
-                    
-            
-
-                    
-          
         </div>
       )}
     </div>

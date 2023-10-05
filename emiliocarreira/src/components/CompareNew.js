@@ -27,7 +27,7 @@ function SpaceXLaunchesChart() {
 
   return (
     <div>
-      <select onChange={handleLaunchSelect} className="col-sm-8 my-3">
+      <select id="compare1" onChange={handleLaunchSelect} className="col-sm-8 my-3 btn">
         <option value="">Select a launch</option>
         {launches.map((launch) => (
           <option key={launch.flight_number} value={launch.flight_number}>

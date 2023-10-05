@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { container, row } from 'react-bootstrap'
+
 
 
 function Dashboard() {
@@ -66,14 +66,14 @@ function Dashboard() {
     <div class='container m-3 mx-auto '>
 
         <div class='row'>
-                <div class='col-md-12 bg-dark text-light mb-3 mx-auto'>
+                <div id="informationDashboard" class='col-md-12 bg-dark text-light mb-3 mx-auto'>
                     <h1>SpaceX</h1>
                     <p>SpaceX is a private spaceflight company that sends satellites and people to space, including NASA crews to the International Space Station (ISS). Founder Elon Musk is also creating and testing a Starship system for lunar landings and, he hopes, future crewed Mars missions.</p>
                 </div>
 
             <div class='row'>
 
-                <div class='col-md-8 bg-dark text-light'>
+                <div id="informationDashboard" class='col-md-8 bg-dark text-light'>
                     <div>
                         {launch ? (
                             <div>
@@ -91,19 +91,16 @@ function Dashboard() {
 
                 </div>
 
-                <div class='col-md-4'>
-                    <div class='col-md-12 bg-dark text-light'>
-                  
-                            <h5 class='card-title'>Compare</h5>
-                            <a href='/Compare'><img src={imageURL1} alt="Mission patch" class='w-50' /></a>
+                <div class='col-md-4 '>
+                    <div id="navigateCard" class='col-md-12 text-light btn'>
+                        <h5 class='card-title'>Compare</h5>
+                        <a href='/Compare'><img src={imageURL1} alt="Mission patch" class='w-50' /></a>
                     </div>
 
                     
-                    <div class='col-md-12 bg-dark text-light p-2'>
-
-                            <h5 class='card-title m-2'>Time-Line</h5>
-                            <a href='/TimeLine'><img src={imageURL2} alt="Mission patch" class='w-50' /></a>                            
-                    
+                    <div id="navigateCard" class='col-md-12 text-light p-2 btn'>
+                        <h5 class='card-title m-2'>Time-Line</h5>
+                        <a href='/TimeLine'><img src={imageURL2} alt="Mission patch" class='w-50' /></a>                            
                     </div>
                     
                         
@@ -111,7 +108,7 @@ function Dashboard() {
                 </div>
             </div>
             <div class='row'>
-                <div class='col-md-12 bg-dark text-light mt-3'>
+                <div id="informationDashboard" class='col-md-12 bg-dark text-light mt-3'>
                     <h4>How do SpaceX make money?</h4>
                     <p>SpaceX makes money by charging both governmental and commercial customers to send goods into space. These goods include ISS supplies and infrastructure, but also people and satellites for various purposes.</p>
                 </div>

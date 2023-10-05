@@ -42,9 +42,9 @@
   height: 45px;
   border-radius: 50px;
 }
-body{
+/* body{
   color: #282c34;
-}
+} */
 #about{
   border-radius:6px;
   background-color: gray;
@@ -183,4 +183,37 @@ body{
     text-align: left;
   }
 
+  #navigateCard {
+    margin-top: 10px;
+    background-color: #212529;
+    border: 3px solid #7292B9;
+  }
+
+  #navigateCard:hover {
+    background-color: #7292B9;
+    border: 3px solid white;
+  }
+
+  #compare1{
+    background-color: #7292B9;
+    color: white;
+    padding: 4px;
+    
+  }
+
+  #compareDev {
+    border: 3px solid #7292B9;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  #informationDashboard {
+    margin-top: 10px;
+    background-color: #212529;
+    border: 3px solid #7292B9;
+    padding: 10px;
+  }
+
+  /* Rocket animation cover */
+ 
   
