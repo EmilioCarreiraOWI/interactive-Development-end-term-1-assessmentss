@@ -13,9 +13,10 @@ I was introduced to charts.js and the React app for the first time this term. Th
 [![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/en)
-[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
-![Interro Profile Screenshot](https://github.com/JugheadStudio/Github-assets/blob/main/Interro/profile-screenshot.png?raw=true?raw=true)
+
+![Screenshot 2023-11-08 135630](https://github.com/EmilioCarreiraOWI/interactive-Development-end-term-1-assessmentss/assets/113447065/c02d57fc-b9f2-4234-ac05-e48f2814fcc0)
+
 
 ## How To Install
 
@@ -42,53 +43,20 @@ The website's concept is to compare rockets with one another to see if any of th
 ## UI Design
 
 ### Home Page
-![Home Page UI Design](https://github.com/JugheadStudio/Github-assets/blob/main/Interro/Home%20Page.png?raw=true)
+![Screenshot 2023-11-08 135630](https://github.com/EmilioCarreiraOWI/interactive-Development-end-term-1-assessmentss/assets/113447065/c02d57fc-b9f2-4234-ac05-e48f2814fcc0)
 
-### Post Page
-![Post Page UI Design](https://github.com/JugheadStudio/Github-assets/blob/main/Interro/Post%20Page.png?raw=true)
+### Compare Page
+![Screenshot 2023-11-08 135904](https://github.com/EmilioCarreiraOWI/interactive-Development-end-term-1-assessmentss/assets/113447065/b2608953-4127-4ff5-96d9-91b48e6902e1)
 
-### Create a Post Page
-![Create a Post UI Design](https://github.com/JugheadStudio/Github-assets/blob/main/Interro/Create%20a%20post.png?raw=true)
-
-### Community Page
-![Community Page UI Design](https://github.com/JugheadStudio/Github-assets/blob/main/Interro/Community.png?raw=true)
-
-### Profile Page
-![Profile Page UI Design](https://github.com/JugheadStudio/Github-assets/blob/main/Interro/Profile.png?raw=true)
+### TimeLine Page
+![Screenshot 2023-11-08 140045](https://github.com/EmilioCarreiraOWI/interactive-Development-end-term-1-assessmentss/assets/113447065/125e5bb7-37b5-4b9b-92d8-375fc5dc5303)
 
 ## Development Process
 
-### Highlights
-* Highlights of the website is the simplistic UI and the functionality that gives the user a pleasant user experience.
-* The website is easy to understand and navigate.
-* The website makes use of [Quill.js](https://quilljs.com) rich text editor for seamless post creation and styling.
-
 ### Challenges
-* Future proofing the website in a functional yet optimised way that makes use of components and templates where possible to keep the website running smooth and simplify updates in the future
-* Building the website in such a way that everything is automated, from automatically creating user profiles and displaying only their own posts to creating new communities and automatically generating a community page and adding it to the navbar.
+* One of my biggest problems was that, for some reason, I was unable to display the Chartjs on my website. Nevertheless, I found another solution and used Google Charts to fulfil the website's minimal requirements. These days, rockets can demonstrate whether a rocket launch was successful or not.
 
-## Future Implementations
-
-* Allow Users to view other user Profiles
-* Add admin and moderator functionality to each community
-* Add super admin functionality that allows Open Window staff to post announcements and event details to the home page
-* Allow any student to create their own communities for something like a horror club, DnD club etc.
-
-## Mockups
-
-### Profile Mockup
-![Interro Mockup 1](https://github.com/JugheadStudio/Github-assets/blob/main/Interro/1.jpg?raw=true)
-
-### Community Page Mockup
-![Interro Mockup 2](https://github.com/JugheadStudio/Github-assets/blob/main/Interro/2.jpg?raw=true)
-
-### Individual Post Page Mockup
-![Interro Mockup 3](https://github.com/JugheadStudio/Github-assets/blob/main/Interro/3.jpg?raw=true)
-
-### Home Page Mockup
-![Interro Mockup 4](https://github.com/JugheadStudio/Github-assets/blob/main/Interro/4.jpg?raw=true)
-
-## Demonstration
+## Demonstration Video
 
 ### License
-[MIT](LICENSE) © Emilio Carreira, Ruan Jordaan, Anke Du Raan, Eric Condradie
+[MIT](LICENSE) © Emilio Carreira
