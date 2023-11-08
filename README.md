@@ -22,7 +22,7 @@ I was introduced to charts.js and the React app for the first time this term. Th
 
 To get started, clone the repo:
 ```
-git clone https://github.com/EmilioCarreiraOWI/DV200_Group1_Term4
+https://github.com/EmilioCarreiraOWI/interactive-Development-end-term-1-assessmentss.git
 ```
 
 Navigate to the 'client' folder to install all the dependencies
