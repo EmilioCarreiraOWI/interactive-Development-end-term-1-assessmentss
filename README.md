@@ -25,7 +25,7 @@ To get started, clone the repo:
 https://github.com/EmilioCarreiraOWI/interactive-Development-end-term-1-assessmentss.git
 ```
 
-Navigate to the 'client' folder to install all the dependencies
+Navigate to the 'emiliocarreira' folder to install all the dependencies
 ```
 npm i
 ```
